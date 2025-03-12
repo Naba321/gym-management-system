@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}About Us{% endblock %}
+{%load static%}
+{% block body %}
+<section id="about" class="about py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 text-center mb-4">
+        <img src="{% static 'images/titan.jpeg' %}" class="img-fluid" alt="TITAN GYM Logo" style="width: 250px;">
+      </div>
+      <div class="col-lg-6">
+        <div class="about-content">
+          <h2 class="section-title mb-4">Welcome to TITAN GYM</h2>
+          <p class="about-description">Established in 2024, TITAN GYM is more than just a fitness center – it's a community dedicated to transforming lives through fitness and wellness.</p>
+          <h3 class="mt-5">Our Vision</h3>
+          <p class="about-description">To inspire and empower individuals to lead healthier, happier, and more fulfilling lives.</p>
+          <h3 class="mt-5">Our Mission</h3>
+          <p class="about-description">To provide a supportive and inclusive environment where members can achieve their fitness goals, unleash their potential, and embrace a balanced lifestyle.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-lg-12 text-center">
+        <img src="{% static 'images/12.jpeg' %}" class="img-fluid rounded shadow" alt="About Us Image" style="max-width: 100%; height: auto;">
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
